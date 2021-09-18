@@ -31,6 +31,8 @@ const quizDB=[
         d: "HTML, Head, Title, Body",
         ans:"ans4"
     }
+        
+    
   ];
 
   const question=document.querySelector('.question');
@@ -41,6 +43,7 @@ const quizDB=[
   const submit= document.querySelector('#submit');
   const answers =document.querySelectorAll('.answer');
   const showScore=document.querySelector('#showScore');
+  const maindiv=document.querySelector('.inner-div');
  
     let questionCount=0;
       let score=0;
@@ -84,10 +87,11 @@ const quizDB=[
       deselectall();
       if(questionCount < quizDB.length){
           loadQuestion();
-      }else{
-        showScore.innerHTML=`
-        <h3> Your Scored ${score}/${quizDB.length}</h3>
-        <button class="btn" onclick="location.reload()">play Again</button>
+      }else if(questionCount == quizDB.length){
+         
+        maindiv.innerHTML=`
+       <h3 id="hheading"> Your Scored ${score}/${quizDB.length}</h3>
+       <button class="sub" onclick="location.reload()">play Again</button>
         `;
     showScore.classList.remove('scoreArea')
 }

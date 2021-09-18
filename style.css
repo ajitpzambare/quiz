@@ -64,23 +64,39 @@ input{
     box-shadow:0 1rem 1rem -0.7rem rgba(0,0, 0, 0.4);
 }
 #showScore h3{
-    font-size:  3rem;
+    font-size:  rem;
     text-align: center;
 }
-#showScore .btn{
+ .sub{
     margin-top: 2rem;
     background-color: #55efc4;
     color:#2d3436;
+    padding: 1rem 3rem;
+    outline: none;
+    font-size: 2rem;
+    font-size: 400;
+    display: block;
+    margin: auto;
+    border: none;
+    text-transform: uppercase;
+    
+    
+    margin-top: 4rem;
+    cursor: pointer;
 }
-#showScore .btn:hover{
+.sub:hover{
     background-color: #00b894;
     color: #fff;
 }
-
+#hheading{
+    text-align: center;
+    font-size: 3rem;
+}
 .scoreArea{
     display: none;
 }
-@media only screen and (max-width: 650px) {
+
+@media only screen and (max-width: 700px) {
     .inner-div{
         width:  80%;
         background-color: #fff;
@@ -143,3 +159,4 @@ input{
 }
 
   }
+ 
